@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Color Scheme Generator</title>
+</head>
+
+<body>
+  <main id="main">
+    <div class="color-scheme-container">
+      <input type="color" id="color-input" value="#6600ff">
+      <div class="custom-select">
+        <button id="dropdown-button" class="select-button" role="combobox" aria-label="select button"
+          aria-haspopup="listbox" aria-expanded="false" aria-controls="select-dropdown">
+          <span id="selected-mode" class="selected-value">monochrome</span>
+          <span class="arrow"></span>
+        </button>
+        <ul class="select-dropdown hidden" role="listbox" id="select-dropdown" aria-labelledby="dropdown-button">
+          <li role="option">monochrome</li>
+          <li role="option">monochrome-dark</li>
+          <li role="option">monochrome-light</li>
+          <li role="option">analogic</li>
+          <li role="option">complement</li>
+          <li role="option">analogic-complement</li>
+          <li role="option">triad</li>
+          <li role="option">quad</li>
+        </ul>
+      </div>
+      <button id="get-color-scheme" class="get-color-scheme">Get color scheme</button>
+    </div>
+
+    <div id="colors-container" class="colors-container">
+  </main>
+
+  <script src="dropdown-menu.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
